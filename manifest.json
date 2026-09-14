@@ -1,0 +1,25 @@
+{
+  "id": "/index.html",
+  "name": "Vet Ortho Calculator",
+  "short_name": "OrthoCalc",
+  "description": "Planning calculator for veterinary orthopedic surgeons: TPLO plateau rotation, DFO wedge width, and femoral torsion correction.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0a4d42",
+  "theme_color": "#0f6e5f",
+  "orientation": "portrait-primary",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["medical", "utilities", "productivity"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "screenshots": [
+    { "src": "screenshot-1.png", "sizes": "1080x1920", "type": "image/png", "form_factor": "narrow", "label": "TPLO calculation tab" },
+    { "src": "screenshot-2.png", "sizes": "1080x1920", "type": "image/png", "form_factor": "narrow", "label": "DFO calculation tab" }
+  ]
+}
