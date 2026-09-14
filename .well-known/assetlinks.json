@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "io.github.vetplan011_wq.twa",
+        "sha256_cert_fingerprints": ["68:C5:1E:EF:D1:FF:1D:FA:21:F3:AF:8F:45:CC:AE:B1:6B:9F:F0:63:AD:CA:65:04:0D:60:E8:65:88:77:1B:7E"]
+      }
+    }]
