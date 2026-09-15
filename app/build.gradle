@@ -14,11 +14,30 @@ android {
         versionName '1.1.0'
     }
 
+    def signingStoreFile = System.getenv('ANDROID_KEYSTORE_PATH')
+    def signingStorePassword = System.getenv('ANDROID_KEYSTORE_PASSWORD')
+    def signingKeyAlias = System.getenv('ANDROID_KEY_ALIAS')
+    def signingKeyPassword = System.getenv('ANDROID_KEY_PASSWORD')
+
+    signingConfigs {
+        if (signingStoreFile && signingStorePassword && signingKeyAlias && signingKeyPassword) {
+            release {
+                storeFile file(signingStoreFile)
+                storePassword signingStorePassword
+                keyAlias signingKeyAlias
+                keyPassword signingKeyPassword
+            }
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
             shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            if (signingStoreFile && signingStorePassword && signingKeyAlias && signingKeyPassword) {
+                signingConfig signingConfigs.release
+            }
         }
     }
 
