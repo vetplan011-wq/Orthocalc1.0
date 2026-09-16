@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">OrthoCalc</string>
+    <string name="asset_statements">[{&quot;include&quot;: [&quot;https://vetplan011-wq.github.io/Orthocalc1.0/.well-known/assetlinks.json&quot;]}]</string>
+</resources>
